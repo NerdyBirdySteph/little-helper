@@ -9,7 +9,8 @@
   },
   "keywords": [
     "flux",
-    "reactjs"
+    "reactjs",
+    "firebase"
   ],
   "author": "Stephanie Munch Jensen",
   "license": "MIT",
@@ -20,7 +21,8 @@
   "devDependencies": {},
   "dependencies": {
     "brixo-framework": "~0.0.7",
-    "brixo-ui": "~0.0.30",
-    "fluxo": "~0.0.10"
+    "brixo-ui": "~0.0.31",
+    "fluxo": "~0.0.10",
+    "firebase": "~2.2.29"
   }
 }

@@ -2,7 +2,7 @@
 var webpack = require('./webpack.config');
 
 module.exports = function(config) {
-    //Set basic Brixo karma configuiration
+    //Set basic Brixo karma configuration
     require('brixo-framework/config/karma.conf.js')(webpack)(config);
 
     config.set({

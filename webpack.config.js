@@ -6,9 +6,4 @@ var _ = require('lodash');
 var webpackConfig = require('brixo-framework/config/webpack.config.js');
 
 module.exports = _.merge(webpackConfig,{
-    // everride webpack settings here
-    externals: {
-        'react' : 'React',
-        'react/addons' : 'React'
-    }
 });
