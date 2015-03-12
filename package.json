@@ -1,0 +1,26 @@
+{
+  "name": "little-helper",
+  "version": "0.0.1",
+  "description": "A personal assistant that helps you remember things and people.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NerdyBirdySteph/little-helper.git"
+  },
+  "keywords": [
+    "flux",
+    "reactjs"
+  ],
+  "author": "Stephanie Munch Jensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NerdyBirdySteph/little-helper/issues"
+  },
+  "homepage": "https://github.com/NerdyBirdySteph/little-helper",
+  "devDependencies": {},
+  "dependencies": {
+    "brixo-framework": "~0.0.7",
+    "brixo-ui": "~0.0.30",
+    "fluxo": "~0.0.10"
+  }
+}
