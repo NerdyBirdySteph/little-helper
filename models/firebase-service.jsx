@@ -1,5 +1,5 @@
 
-var config = require('private/firebase.config');
+var config = require('config/firebase.config');
 var Firebase = require('firebase');
 var db = new Firebase(config.remoteUrl);
 var contacts = db.child('contacts');
