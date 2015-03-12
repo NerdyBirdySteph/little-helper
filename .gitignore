@@ -14,4 +14,4 @@ web-components.iml
 bundles/**
 npm-debug.log
 **/styleguide/config
-#config/
+config/

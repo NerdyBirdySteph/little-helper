@@ -18,7 +18,9 @@
     "url": "https://github.com/NerdyBirdySteph/little-helper/issues"
   },
   "homepage": "https://github.com/NerdyBirdySteph/little-helper",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-scaffold": "^0.1.3"
+  },
   "dependencies": {
     "brixo-framework": "~0.0.7",
     "brixo-ui": "~0.0.31",

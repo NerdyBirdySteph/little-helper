@@ -10,6 +10,8 @@ module.exports = function(grunt) {
 
     // Brixo Framework - default tasks configuration
     var brixoGrunt = require('brixo-framework/config/gruntfile.js')(grunt);
+
+    var brixoScaffold = require('brixo-framework/scaffolding/scaffold.config.js')(grunt, brixoGrunt.configItem);
     
     // configure tasks entry points
     brixoGrunt.configItems('elements');
@@ -43,9 +45,24 @@ module.exports = function(grunt) {
             // override webpack dev server configurations here  
         }),
 
-        scaffold: require('brixo-framework/scaffolding/scaffold.config.js')(grunt, brixoGrunt.configItem)
+        scaffold: _.merge(brixoScaffold, {
+            config: {
+                options: {
+                    questions: [{
+                        name: 'firebaseUrl',
+                        type: 'input',
+                        message: 'Firebase DB url:'
+                    }],
+                    template: {
+                        'scaffolding/config/firebase.config.js': 'config/firebase.config.js'
+                    }
+                }
+            }
+        })
+
     };
 
     grunt.initConfig(projectGrunt);
     grunt.registerTask('default', ['open:start', 'webpack-dev-server:start']);
+    grunt.registerTask('config', 'scaffold:config');
 };
