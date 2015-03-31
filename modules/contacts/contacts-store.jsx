@@ -7,6 +7,7 @@ var ContactsStore = Fluxo.createStore(true, {
     },
     mixins: [FirebaseService],
     actions: ['sync-status','contact-received','add-contact','update-contact'],
+
     onSyncStatus: function(status) {
         this.setState({
             syncing: status

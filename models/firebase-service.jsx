@@ -10,13 +10,6 @@ module.exports = {
 
         var firstVal = true;
 
-        /*contacts.on('value', function(snapshot) {
-            if(!firstVal) { return; }
-            console.log('Contacts received', snapshot);
-            store.trigger('contacts-received', snapshot.val());
-            firstVal = false;
-        });*/
-
         contacts.on('child_added', function(snapshot) {
             //console.log('Contact added', snapshot);
             var contact = snapshot.val();
@@ -31,6 +24,7 @@ module.exports = {
         });
 
     },
+    dispose() {},
     add: function (contact) {
         contacts.push(contact);
     },
